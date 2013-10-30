@@ -1,0 +1,7 @@
+{
+  "mapname": "map-div",
+  "basemap": "Topographic",
+  "center": [34.0086, -118.4986],
+  "zoom": 9,
+  "monumentsfile": "monuments.geojson"
+}

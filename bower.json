@@ -1,0 +1,9 @@
+{
+  "name": "MonumentLocator",
+  "version": "0.0.1",
+  "devDependencies": {
+    "esri-leaflet": "git@github.com:Esri/esri-leaflet.git#~0.0.1-rc1",
+    "Leaflet.markercluster": "git@github.com:Leaflet/Leaflet.markercluster.git",
+    "leaflet-locatecontrol": "git@github.com:domoritz/leaflet-locatecontrol.git#~0.18.0"
+  }
+}
