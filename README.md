@@ -11,10 +11,13 @@ Uses [LeafletJS](http://leafletjs.com/) with the following plugins.
 
 ## Installation
 >Will load dependencies with [Bower](https://github.com/bower/bower) and build Leaflet from source.
+
     chmod 755 setup.sh
     ./setup.sh
 
 ## Build
+>Compiles JS to resources/public
+
     chmod 755 build.sh
     ./build.sh
 
