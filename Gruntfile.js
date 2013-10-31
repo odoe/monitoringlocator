@@ -32,11 +32,11 @@ module.exports = function(grunt) {
       options: {
         dest: 'resources/public'
       },
-      html: ['resources/public/index.html']
+      html: ['resources/public/index.html', 'index.html']
     },
 
     usemin: {
-      html: ['resources/public/index.html']
+      html: ['resources/public/index.html', 'index.html']
     }
   });
 
