@@ -14,4 +14,5 @@
      :compiler
      {:pretty-print false,
       :output-to "resources/js/main.js",
-      :optimizations :simple }}]})
+      :externs ["src/cljs/externs/externs.js"],
+      :optimizations :advanced }}]})

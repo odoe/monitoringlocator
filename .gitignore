@@ -6,7 +6,6 @@
 /doc
 /resources/libs
 /resources/node_modules
-/resources/public
 /.tmp
 /node_modules
 pom.xml
@@ -14,7 +13,6 @@ pom.xml.asc
 *.jar
 *.class
 *.lnk
-/resources/json/monuments.geojson
 .lein-deps-sum
 .lein-failures
 .lein-plugins

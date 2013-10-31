@@ -11,6 +11,11 @@
 
 (def control (.-control L))
 
+(defn imagePaths []
+  (set! (.-imagePath
+          (.-Default
+            (.-Icon L))) "images/"))
+
 (defn map-div [n]
   "Creates a map-div element with id given."
   [:div { :id (str n) }])
@@ -41,6 +46,7 @@
 
 (defn handler [event]
   "Handles the receipt of JSON configuration."
+  (imagePaths)
   (let [data (parseResponse event)]
     (dommy/append!
       (sel1 :body) (map-div (.-mapname data)))
@@ -52,6 +58,5 @@
       (-> control (.locate (js-obj "drawCircle" false "follow" true))
           (.addTo emap))
       (xhr/send (.-monumentsfile data) (monuments emap) "GET"))))
-
 ;; start the application
 (xhr/send "config.json" handler "GET")

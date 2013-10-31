@@ -5,12 +5,16 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    clean: ["resources/public"],
     copy: {
       main: {
         files: [{
           expand: true,
           flatten: true,
-          src: ['resources/libs/leaflet-locatecontrol/src/images/*'],
+          src: [
+            'resources/libs/Leaflet/dist/images/*',
+            'resources/libs/leaflet-locatecontrol/src/images/*'
+          ],
           dest: 'resources/public/images/'
         }, {
           expand: true,
@@ -37,6 +41,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('build', [
+    'clean',
     'copy',
     'useminPrepare',
     'concat',
