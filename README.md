@@ -9,6 +9,15 @@ Uses [LeafletJS](http://leafletjs.com/) with the following plugins.
 * [leaflet-locatecontrol](https://github.com/domoritz/leaflet-locatecontrol)
 * [esri-leaflet](https://github.com/Esri/esri-leaflet)
 
+## Installation
+>Will load dependencies with [Bower](https://github.com/bower/bower) and build Leaflet from source.
+    chmod 755 setup.sh
+    ./setup.sh
+
+## Build
+    chmod 755 build.sh
+    ./build.sh
+
 Application written in [ClojureScript](https://github.com/clojure/clojurescript), post-processed with [GruntJS](http://gruntjs.com/).
 
 *Note* - I did not include a monuments.geojson file for application.
